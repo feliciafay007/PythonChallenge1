@@ -32,7 +32,8 @@ class TraverseCurrentDir :
                     current_files.append(f)
                     #print "TEST1", current_path, f
                     if (os.path.isdir(current_path +  "/" + f)):
-                        current_links.append(current_path + "/" + f)
+                        #current_links.append(current_path + "/" + f)
+                        current_links.append("/" + f)
                     else :
                         current_links.append('-')
         else:
@@ -44,7 +45,8 @@ class TraverseCurrentDir :
                     if not f.startswith('.') :
                         current_files.append(f)
                         if (os.path.isdir(current_path + "/" + f)):
-                            current_links.append(current_path + "/" + f)
+                            #current_links.append(current_path + "/" + f)
+                            current_links.append(input_dir + "/" + f)
                         else :
                             current_links.append('-')
             else:
