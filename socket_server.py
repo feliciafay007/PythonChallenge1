@@ -23,7 +23,7 @@ while 1:
     request_method, request_uri, request_proto, request_body, request_headers  = bc.return_get(data)
     #print "RECEIVED_FROM_CLIENT : ", data
     #print "RECEIVED_FROM_CLIENT_HEADER : ", header_from_bc
-    bc.return_body(request_method, request_uri, request_proto, request_body, request_headers, conn)
+    #bc.return_body(request_method, request_uri, request_proto, request_body, request_headers, conn)
      
-    #bc.return_current_dir_and_link(request_method, request_uri, request_proto, request_body, request_headers, conn, request_uri)
+    bc.return_current_dir_and_link(request_method, request_uri, request_proto, request_body, request_headers, conn, request_uri)
 conn.close()
